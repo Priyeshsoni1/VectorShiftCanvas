@@ -1,0 +1,123 @@
+.baseNode {
+  width: 260px;
+  padding: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.baseNode:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.baseNodeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #d11a2a;
+  padding: 2px 6px;
+  transition: color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  color: #ff0000;
+}
+
+.baseNodeFields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.baseNodeField {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #374151;
+  width: 100%;
+}
+
+.baseNodeField label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.baseNodeField input,
+.baseNodeField select {
+  padding: 8px 10px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: #111827;
+  transition: border 0.2s, box-shadow 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.baseNodeField input:focus,
+.baseNodeField select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+  outline: none;
+}
+
+.baseNodeField input::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.text-node-textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 6px;
+  min-height: 30px;
+  background-color: #fff;
+  resize: none;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Dropdown Suggestions Box */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: 0;
+  padding: 0.4em;
+  z-index: 100;
+  min-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown li:hover {
+  background-color: #f3f4f6;
+}
